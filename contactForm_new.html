@@ -1,0 +1,925 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Contact & Inquiries</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127158361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127158361-1');
+</script>
+
+  <!--The image used -->
+  <style>
+
+      section {
+        width:100%; 
+        max-width:100%; 
+        margin:0px auto; 
+        display:table; 
+        position:relative; 
+        z-index: 1000;
+        background-color: white;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.14); */
+        }
+
+       img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px;
+        }
+
+        .homeScreenOverlay {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 255, 255));
+            color: #f1f1f1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .fullscreenDiv {
+            width: 30%;
+            height: auto;
+            bottom: 0px;
+            top: 120px;
+            padding-left: 35%;
+            padding-right: 35%;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+            align-items: center;
+            justify-content: center;
+        }  
+
+        .contactForm_headerText {
+            font-family: monospace;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 900;
+            padding-left: 0px;
+            text-align: left;
+            width: 95%;
+            height: auto;
+            bottom: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(0, 97, 154);
+        }
+
+        .required_Text {
+            font-family: UsamaLight;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 500;
+            padding-left: 0px;
+            text-align: left;
+            width: 95%;
+            height: auto;
+            bottom: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(41, 41, 41);
+        }
+
+        .textbody_contactForm {
+            font-family: monospace;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+            height: auto;
+            bottom: 30px;
+            top: 30px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }
+
+        .checkBoxes_container {
+            font-family: UsamaLight;
+            font-size: 28px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+            height: auto;
+            bottom: 30px;
+            top: 10px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }
+
+        input {
+            font-family: monospace;
+            height: 16px;
+            width: 100%;
+            font-weight: 100;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 12px;
+            box-shadow: 0px 0px 7px 0px #b8b8b8;
+            border: 0;
+            position: relative;
+            bottom: 0px;
+        }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(194, 194, 194);
+        opacity: 1; /* Firefox */
+        font-size: 18px;
+    }
+
+        
+    /* The container */
+    .container-checkboxes {
+        font-family: monospace;
+        display: block;
+        line-height: 24px;
+        position: relative;
+        padding-left: 35px;
+        margin-top: 22px;
+        padding-top: 1px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 95%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+     /* Hide the browser's default checkbox */
+     .container-checkboxes input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container-checkboxes:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container-checkboxes input:checked ~ .checkmark {
+        background-color: rgb(45, 45, 45);
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container-checkboxes input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container-checkboxes .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .message-input {
+        font-family: monospace;
+        height: 118px;
+        width: 100%;
+        font-weight: 100;
+        font-size: 16px;
+        margin-top: 20px;
+        padding: 12px;
+        box-shadow: 0px 0px 7px 0px #b8b8b8;
+        border: 0;
+        position: relative;
+        bottom: 0px;
+    }
+
+    .antispam { display:none;}
+
+
+    input[type=button], input[type=submit], input[type=reset] {
+        background-color: blue;
+        color: rgb(0, 97, 142);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 2px;
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+        height: 64px;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid #165da4; 
+        border-radius: 4px;
+    }
+
+    #submit_btn {
+        cursor: pointer; 
+        background: rgb(0, 97, 142);
+        border: none;
+        color: rgb(255, 255, 255);
+        margin-top: 60px;
+        margin-bottom: 120px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+
+        .bg-1 { 
+        /* The image used */
+        background-image: url("");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        background-attachment: fixed;
+        
+        }
+
+        .bg-2 { 
+        /* The image used  */
+        background-image: url("images/closeUpBwMyFace.jpg"); 
+
+        /* Full height  */
+        height: 100%; 
+
+        /* Center and scale the image nicely   */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        } 
+ 
+
+        @font-face {
+            font-family: "UsamaLight";
+            src: url(fonts/UsamaLight.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+       
+
+
+        header {
+            background: linear-gradient(to top, rgba(255, 253, 253, 0), rgb(255, 255, 255));
+        }
+
+        button {
+            padding:10px;
+            margin:0 10px;
+            width:220px;
+            cursor:pointer;
+            background-color: transparent;
+            color: aqua;
+            border: none;
+        }  
+
+        a {
+            color: #cef8ff;
+        }
+
+
+        @media screen and (max-width: 1024px) {
+
+        .fullscreenDiv {
+            width: 60%;
+            height: auto;
+            bottom: 0px;
+            top: 120px;
+            padding-left: 20%;
+            padding-right: 20%;
+            position: absolute;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }  
+
+      
+
+        .contactForm_headerText {
+            font-family: UsamaLight;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 500;
+            padding-left: 20px;
+            text-align: left;
+            width: 95%;
+            height: auto;
+            bottom: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(0, 97, 154);
+        }
+
+        .required_Text {
+            font-family: UsamaLight;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 500;
+            padding-left: 20px;
+            text-align: left;
+            width: 95%;
+            height: auto;
+            bottom: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(41, 41, 41);
+        }
+
+        .textbody_contactForm {
+            font-family: monospace;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+            height: auto;
+            bottom: 30px;
+            top: 30px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }
+
+        .checkBoxes_container {
+            font-family: UsamaLight;
+            font-size: 28px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+            height: auto;
+            bottom: 30px;
+            top: 10px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }
+
+        input {
+            font-family: monospace;
+            height: 16px;
+            width: 100%;
+            font-weight: 100;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 12px;
+            box-shadow: 0px 0px 7px 0px #b8b8b8;
+            border: 0;
+            position: relative;
+            bottom: 0px;
+        }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(194, 194, 194);
+        opacity: 1; /* Firefox */
+        font-size: 18px;
+    }
+
+        
+    /* The container */
+    .container-checkboxes {
+        font-family: monospace;
+        display: block;
+        line-height: 24px;
+        position: relative;
+        padding-left: 35px;
+        margin-top: 22px;
+        padding-top: 1px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+     /* Hide the browser's default checkbox */
+     .container-checkboxes input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container-checkboxes:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container-checkboxes input:checked ~ .checkmark {
+        background-color: rgb(45, 45, 45);
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container-checkboxes input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container-checkboxes .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .message-input {
+        font-family: monospace;
+        height: 118px;
+        width: 100%;
+        font-weight: 100;
+        font-size: 16px;
+        margin-top: 20px;
+        padding: 12px;
+        box-shadow: 0px 0px 7px 0px #b8b8b8;
+        border: 0;
+        position: relative;
+        bottom: 0px;
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+        background-color: transparent;
+        color: rgb(0, 97, 142);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 22px;
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+        height: 64px;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid #165da4; 
+        border-radius: 4px;
+    }
+
+        a {
+            color: #cef8ff;
+        }
+
+
+        }
+
+        @media screen and (max-width: 720px) {
+
+        .overlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 1.0);
+        }
+
+    
+
+        #submit_btn {
+            cursor: pointer; 
+            background: rgb(0, 97, 142);
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 20px;
+            margin-bottom: 60px;
+        }
+
+        .fullscreenDiv {
+            width: 90%;
+            height: auto;
+            bottom: 0px;
+            top: 80px;
+            padding-left: 0%;
+            padding-right: 0%;
+            position: absolute;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }  
+
+        .contactForm_headerText {
+            font-family: UsamaLight;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 500;
+            padding-left: 20px;
+            text-align: left;
+            width: 95%;
+            height: auto;
+            bottom: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(0, 97, 154);
+        }
+
+        .required_Text {
+            font-family: UsamaLight;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 500;
+            padding-left: 20px;
+            text-align: left;
+            width: 95%;
+            height: auto;
+            bottom: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(41, 41, 41);
+        }
+
+        .textbody_contactForm {
+            font-family: monospace;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+            height: auto;
+            bottom: 30px;
+            top: 30px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }
+
+        .checkBoxes_container {
+            font-family: UsamaLight;
+            font-size: 28px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+            width: 90%;
+            height: auto;
+            bottom: 30px;
+            top: 10px;
+            position: relative;
+            z-index: 0.1;
+            color: rgb(52, 52, 52);
+        }
+
+    input {
+        font-family: monospace;
+        height: 16px;
+        width: 90%;
+        font-weight: 100;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 12px;
+        box-shadow: 0px 0px 0px 0px #ffffff;
+        border: 0;
+        background-color: #f2f2f2;
+        position: relative;
+        bottom: 0px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(194, 194, 194);
+        opacity: 1; /* Firefox */
+        font-size: 18px;
+    }
+
+        
+    /* The container */
+    .container-checkboxes {
+        font-family: monospace;
+        display: block;
+        line-height: 24px;
+        position: relative;
+        padding-left: 35px;
+        margin-top: 22px;
+        padding-top: 1px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container-checkboxes input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container-checkboxes:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container-checkboxes input:checked ~ .checkmark {
+        background-color: rgb(45, 45, 45);
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container-checkboxes input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container-checkboxes .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+
+    .message-input {
+        font-family: monospace;
+        height: 80px;
+        width: 90%;
+        font-weight: 100;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 12px;
+        box-shadow: 0px 0px 0px 0px #ffffff;
+        border: 0;
+        background-color: #f2f2f2;
+        position: relative;
+        bottom: 0px;
+        
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+        background-color: blue;
+        color: rgb(0, 97, 142);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 22px;
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+        font-size: 24px;
+        height: 64px;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid #165da4; 
+        border-radius: 4px;
+    }
+
+    a { /*  */
+        text-decoration:none;
+        color: #07889b;
+        font-weight: 100;
+    }
+
+
+    }
+
+
+    </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+        <header>
+                <section>
+                        <a id="logoContainer-Desktop" href="index.html"><img src="assets/Homepage_logo-mobileNav.png" width="50"></img></a> 
+                        <div id="mobile-nav-toggle-menu" ><img src="images/world_icon_menu.png" width="44" onclick="openNav()"></img></div> 
+                    <nav>
+                        <ul>  
+                                <div class="dropdown">
+                                        <div class="dropbtn">Services 
+                                        <i class="fa fa-caret-down"></i>
+                                        </div>
+                                    <div class="dropdown-content">
+                                        <a href="UX-UI_work.html">Web / Apps / Software</a>
+                                        <a href="photography.html">Photography</a>
+                                        <a href="videography.html">Videography</a>
+                                        <a href="digitalMarketing.html">Digital Growth</a>
+                                    </div>
+                                </div>
+                            <div class="dropdown">
+                                <a href="story.html"><div class="dropbtn">Story & Approach</div></a>
+                            </div>
+                            
+                            <!-- <div class="dropdown">
+                                <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="dropbtn">Travel</div> </a>
+                            </div> -->
+                            <div class="dropdown">
+                                <a href="contactForm_new.html"><div class="dropbtn">Contact & Inquiries</div> </a>
+                            </div>
+                            <!-- <div class="dropdown">
+                                <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="contactMebtn">Contact & Inquiries</div></a>
+                            </div> -->
+                        </ul>
+                    </nav>
+                   
+              
+            
+                     <!-- Mobile Navigation Overlay Toggle -->
+                     <div id="myNav" class="overlay">
+                            <!-- <a href="index.html" class="mobile-logo">DSX</a> -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                            <div class="servicesText"><a href="UX-UI_work.html">Web / Apps / Software</a></div>
+                            <div class="servicesText"><a href="photography.html">Photography</a></div>
+                            <div class="servicesText"><a href="videography.html">Videography</a></div>
+                            <div class="servicesText"><a href="digitalMarketing.html">Digital Growth</a></div>
+                            <br>
+                            <div class="servicesText"><a href="story.html">Story & Approach</a></div>
+                           
+                            <!-- <div class="servicesText"><a href="#">Travel</a></div> -->
+                            <div class="servicesText"><a href="contactForm_new.html">Contact & Inquiries</a></div>
+                            </div>
+                    </div>
+                    
+                </section>  
+
+            </header>
+                
+
+            <div class="bg-1">           
+                    <div class='fullscreenDiv'>
+                        <br>
+                        <div class="contact-form">
+                                <form id="contact-form" method="post" action="contactForm_handler_dopescrill.php">
+
+                                    <div class="contactForm_headerText">Reach Out & Say Hello!</div>
+                                    <br>
+                                    <div class="required_Text">Hi there! I work for...</div>
+                                    <input name="companyname" type="text" id="companyName" placeholder="Company Name" required>
+                                    <br><br>
+                                    <div class="required_Text">My name is...</div>
+                                    <input name="name" type="text" id="contactName" placeholder="Name" required>
+                                    <br><br>
+                                    <div class="required_Text">You can reach me at...</div>
+                                    <input name="email" type="email" id="Email" placeholder="Email" required>
+                                    <br><br>
+            
+                                    <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
+
+                                    <div class="required_Text">What's up?</div>
+                                    <textarea name="message" class="message-input" placeholder="drop a message..." row="4" required></textarea>
+                                    <br><br>
+                                    <input type="submit" id="submit_btn" name="submit_form" value="SEND MESSAGE" onclick="myFunction()">
+                                    <!-- <input type="submit" id="submit_btn" class="form-control submit" name="submit_form" value="SEND MESSAGE" onclick="myFunction()" disabled> -->
+                                    <br><br>
+
+                                </form>
+                        </div>
+                            
+                        </div>​
+                   
+                <br>
+            </div><br>
+              
+
+                <script>
+                   function myFunction() {
+                    $(document).on("submit", function(e) {
+                    $(this)
+                      .find("input, select, textarea")
+                      .filter("[required]")
+                      .filter(function() {
+                        return this.value == '';
+                      })
+                      .first()
+                      .each(function() {
+                        e.preventDefault();
+                        $(this).css({
+                          "border-color": "red"
+                        });
+                        alert($(this).prev('label').html() + " is required!");
+                      });
+                  });
+                    }    
+                </script>
+              
+
+<noscript>
+Please enable javascript or use my <a href="/contactForm_handler_dopescrill.php">contact form</a>
+</noscript>           
+
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+</body>
+</html>

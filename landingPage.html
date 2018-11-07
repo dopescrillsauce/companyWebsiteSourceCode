@@ -1,0 +1,515 @@
+ <!-- UX UI Work HTML -->
+
+ <!doctype html>
+
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+ 
+   <title>DopeScrill Designs</title>
+   <meta name="description" content="The HTML5 Herald">
+   <meta name="author" content="SitePoint">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+ 
+   <style>
+
+    #main-content-container {
+        height: 100%;
+        width: 50%;
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+        position: absolute;
+        background:transparent;
+    }
+       .textbox {
+            font-family: "Times New Roman",Times,serif;   
+            height: 50%;
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background: transparent;
+         }
+
+        .header-Text {
+            font-family: "Times New Roman",Times,serif;   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 64px;
+            text-transform: uppercase;
+            letter-spacing: .01em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 14px;
+            background: transparent;
+        }
+
+        .tagline-Text {
+            font-family: "UsamaLight";   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 38px;
+            text-transform: uppercase;
+            letter-spacing: .02em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 14px;
+            background: transparent;
+        }
+
+        .description-Text {
+            font-family: "Metropolis";   
+            font-weight: 300;
+            font-style: normal;
+            font-size: 15px;
+            letter-spacing: .02em;
+            line-height: 1.5em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 80px;
+            padding-bottom: 10px;
+            background: transparent;
+        }
+
+        .btn {
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3pt;
+        margin-right: 6px;
+        margin-top: 10px;
+        }
+
+        a {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'lato', sans-serif;
+        font-weight: 300; 
+        line-height: 20px;
+        letter-spacing: .10em;
+        }
+
+        a:hover {
+        color: #000000;
+        font-size: 16px;
+        font-family: 'lato', sans-serif;
+        font-weight: 300; 
+        line-height: 20px;
+        letter-spacing: .10em;
+        }
+
+        /* Green */
+        .web_apps {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .web_apps:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .photo {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .photo:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .video {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .video:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .growth {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .growth:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .contact {
+        border-color: rgb(255, 255, 255);
+        color: #ffffff;
+        margin-top: 24px;
+        font-weight: 100; 
+        background: rgb(255, 255, 255, 0.2);
+        }
+
+        .contact:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+        
+         @font-face {
+             font-family: "Metropolis";
+             src: url(fonts/Metropolis.otf);
+             font-style: normal;
+             font-weight: 100;
+         }
+ 
+         .bg-1 { 
+             /* The image used */
+             background-image: url("images/bigstock-People-Moving-forWeb.jpg");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 0.1;
+         }
+
+        .social-icon {
+            padding: 14px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 40px;
+            margin: 4px 1px;
+            color: aqua;
+        }
+
+        .social-icon:hover {
+            color: #e9e9e9;
+        }
+
+        @media screen and (max-width: 1540px) {
+
+            .btn {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3pt;
+            margin-right: 6px;
+            margin-top: 10px;
+            width: 220px;
+            }
+
+        .social-icon {
+            padding: 12px;
+            font-size: 18px;
+            width: 14px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 40px;
+            margin: 2px 1px;
+            color: aqua;
+        }
+
+        }
+
+        @media screen and (max-width: 1144px) {
+
+        #main-content-container {
+            height: 100%;
+            width: 70%;
+            top: 50%;
+            left: 100%;
+            transform: translate(-100%, -50%);
+            position: absolute;
+            background:transparent;
+        }
+
+        .textbox {
+            font-family: "Times New Roman",Times,serif;   
+            height: 50%;
+            width: 80%;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -25%);
+            position: absolute;
+            background: transparent;
+        }
+
+        .btn {
+        border: 1px solid rgb(255, 255, 255);
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3pt;
+        margin-right: 6px;
+        margin-top: 10px;
+        width: 97%;
+        }
+
+        .social-icon {
+        padding: 16px;
+        font-size: 24px;
+        width: 14px;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 40px;
+        margin-top: 40px;
+        margin: 2px 1px;
+        color: aqua;
+        }
+
+        .contact {
+        border-color: rgb(255, 255, 255);
+        color: #ffffff;
+        margin-top: 24px;
+        margin-bottom: 34px;
+        font-weight: 100; 
+        background: rgb(255, 255, 255, 0.2);
+        }
+     
+
+        }
+
+        @media screen and (max-width: 720px) {
+
+        #main-content-container {
+        height: 100%;
+        width: 100%;
+        top: 8%;
+        left: 100%;
+        transform: translate(-100%, -25%);
+        position: absolute;
+        background:transparent;
+        }
+
+       .textbox {
+            font-family: "Times New Roman",Times,serif;   
+            height: 50%;
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background: transparent;
+         }
+
+        .header-Text {
+            font-family: "Times New Roman",Times,serif;   
+            font-weight: 700;
+            font-style: normal;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: .01em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 14px;
+            background: transparent;
+        }
+
+        .tagline-Text {
+            font-family: "UsamaLight";   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: .02em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 14px;
+            background: transparent;
+        }
+
+        .description-Text {
+            font-family: "Metropolis";   
+            font-weight: 300;
+            font-style: normal;
+            font-size: 13px;
+            letter-spacing: .02em;
+            line-height: 1.5em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 10px;
+            background: transparent;
+        }
+
+        .btn {
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+        padding: 4px 8px;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 2pt;
+        margin-right: 0px;
+        margin-top: 10px;
+        width: 100%;
+        height: 44px;
+        text-align: center;
+        }
+
+        /* Green */
+        .web_apps {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .web_apps:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .photo {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .photo:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .video {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .video:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .growth {
+        border-color: rgb(255, 255, 255);
+        color: white;
+        }
+
+        .growth:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+
+        .contact {
+        border-color: rgb(255, 255, 255);
+        color: #ffffff;
+        margin-top: 12px;
+        font-weight: 100; 
+        background: rgb(255, 255, 255, 0.2);
+        width: 100%;
+        }
+
+        .contact:hover {
+        background: #ffffff;
+        color: rgb(48, 48, 48);
+        }
+        
+         @font-face {
+             font-family: "Metropolis";
+             src: url(fonts/Metropolis.otf);
+             font-style: normal;
+             font-weight: 100;
+         }
+ 
+         .bg-1 { 
+             /* The image used */
+             background-image: url("images/bigstock-People-Moving-forWeb.jpg");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 0.1;
+         }
+
+        .social-icon {
+            padding: 12px;
+            font-size: 22px;
+            width: 22px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 20px;
+            margin: 4px 1px;
+            color: aqua;
+        }
+
+        .social-icon:hover {
+            color: #e9e9e9;
+        }
+
+        }
+ 
+     </style>
+ 
+   <!--[if lt IE 9]>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+   <![endif]-->
+ </head>
+ 
+ <body>
+
+         <div class="bg-1">
+                <div id="main-content-container">
+                    <div class="textbox">
+                        <div class="header-Text">DopeScrill Designs</div>
+                        <div class="tagline-Text">Experience Creators / / Story Tellers</div>
+                        <div class="description-Text">
+                            With 10+ years of professional projects under our belts, we focus on bringing your digital ideas to life in innovative ways to provide value to the world.  
+                        </div>
+                        <button class="btn web_apps"><a href="UX-UI_work.html">Web & Apps</a></button>
+                        <button class="btn photo"><a href="photography.html">Photography</a></button>
+                        <button class="btn video"><a href="videography.html">Videography</a></button>
+                        <button class="btn growth"><a href="digitalMarketing.html">Digital Growth</a></button><br>
+                        <button class="btn contact">CONTACT & INQUIRIES</button>
+                            <a href="https://www.facebook.com/Dopescrill-474829369697256/" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/Dopescrill-474829369697256/" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/Dopescrill-474829369697256/" class="social-icon" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/Dopescrill-474829369697256/" class="social-icon" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.facebook.com/Dopescrill-474829369697256/" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+         </div>      
+    
+ 
+ </body>
+ </html>

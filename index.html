@@ -1,0 +1,566 @@
+ <!-- UX UI Work HTML -->
+
+ <!doctype html>
+
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+ 
+   <title>DopeScrill Designs</title>
+   <meta name="description" content="The HTML5 Herald">
+   <meta name="author" content="SitePoint">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+ 
+   <style>
+
+    #main-content-container {
+        height: 100%;
+        width: 50%;
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+        position: absolute;
+        background:transparent;
+    }
+       .textbox {
+            font-family: "Times New Roman",Times,serif;   
+            height: 50%;
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background: transparent;
+         }
+
+        .header-Text {
+            font-family: "Times New Roman",Times,serif;   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 64px;
+            text-transform: uppercase;
+            letter-spacing: .01em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 14px;
+            background: transparent;
+        }
+
+        .tagline-Text {
+            font-family: "UsamaLight";   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 38px;
+            text-transform: uppercase;
+            letter-spacing: .02em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 14px;
+            background: transparent;
+        }
+
+        .description-Text {
+            font-family: "Metropolis";   
+            font-weight: 300;
+            font-style: normal;
+            font-size: 15px;
+            letter-spacing: .02em;
+            line-height: 1.5em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 80px;
+            padding-bottom: 20px;
+            background: transparent;
+        }
+
+        .mainButtons-container {
+            height: auto;
+            width: 100%;
+            position: relative;
+            background:transparent;
+            margin-top: 10px;
+        }
+
+        .social-Buttons-container {
+            height: 40px;
+            width: 80%;
+            position: relative;
+            background:transparent;
+            margin-top: 10px;
+        }
+
+        .btn {
+        display: inline-flex;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: transparent;
+        font-family: 'lato', sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 12px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3pt;
+        position: relative;
+        margin-right: 10px; 
+        margin-bottom: 10px;
+        }
+
+        .btn:hover {
+        background-color: #fff;
+        color: black;
+        }
+
+        .btn-contact {
+        display: inline-flex;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255, 0.5);
+        font-family: 'lato', sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 12px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3pt;
+        position: relative;
+        margin-right: 10px; 
+        margin-bottom: 10px;
+        }
+
+        .btn-contact:hover {
+        background-color: #fff;
+        color: black;
+        }
+
+        
+         @font-face {
+             font-family: "Metropolis";
+             src: url(fonts/Metropolis.otf);
+             font-style: normal;
+             font-weight: 100;
+         }
+ 
+         .bg-1 { 
+             /* The image used */
+             background-image: url("images/bigstock-People-Moving-forWeb.jpg");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 0.1;
+         }
+
+        .social-icon {
+            padding: 14px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 40px;
+            margin: 4px 2px;
+            color: rgb(255, 255, 255);
+        }
+
+        .social-icon:hover {
+            color: #07889b;;
+        }
+
+
+        @media screen and (max-width: 1334px) {
+
+        #main-content-container {
+            height: 100%;
+            width: 70%;
+            top: 50%;
+            left: 100%;
+            transform: translate(-100%, -50%);
+            position: absolute;
+            background:transparent;
+        }
+
+        }
+
+        @media screen and (max-width: 952px) {
+
+        #main-content-container {
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+        position: absolute;
+        background:transparent;
+        }
+
+        .textbox {
+            font-family: "Times New Roman",Times,serif;   
+            height: 90%;
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background: transparent;
+        }
+
+        .header-Text {
+            font-family: "Times New Roman",Times,serif;   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: .01em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 7px;
+            background: transparent;
+        }
+
+        .tagline-Text {
+            font-family: "UsamaLight";   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 38px;
+            text-transform: uppercase;
+            letter-spacing: .02em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 4px;
+            background: transparent;
+        }
+
+        .description-Text {
+            font-family: "Metropolis";   
+            font-weight: 300;
+            font-style: normal;
+            font-size: 16px;
+            letter-spacing: .02em;
+            line-height: 1.5em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 20px;
+            padding-bottom: 4px;
+            background: transparent;
+        }
+
+
+        .mainButtons-container {
+            height: auto;
+            width: 100%;
+            position: relative;
+            background:transparent;
+            margin-top: 8px;
+            margin-bottom: 14px;
+        }
+
+        .social-Buttons-container {
+            height: 40px;
+            width: 80%;
+            position: relative;
+            background:transparent;
+            margin-top: 10px;
+        }
+
+        .btn {
+        display: inline-flex;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: transparent;
+        font-family: 'lato', sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 14px 14px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3pt;
+        position: relative;
+        margin-right: 4px; 
+        margin-bottom: 10px; 
+        }
+
+        .btn:hover {
+        background-color: #fff;
+        color: black;
+        }
+
+
+        @font-face {
+            font-family: "Metropolis";
+            src: url(fonts/Metropolis.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        .bg-1 { 
+            /* The image used */
+            background-image: url("images/bigstock-People-Moving-forWeb.jpg");
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+
+            z-index: 0.1;
+        }
+
+        .social-icon {
+            padding: 14px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 40px;
+            margin: 4px 2px;
+            color: rgb(255, 255, 255);
+        }
+
+        .social-icon:hover {
+            color: #07889b;;
+        }
+
+        @media handheld {
+                .btn:hover {
+                    display: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    transform: none;
+                }
+
+                .social-icon:hover {
+                    display: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    transform: none;
+                }
+            }
+
+        }
+
+       
+
+        @media screen and (max-width: 720px) {
+
+        #main-content-container {
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+        position: absolute;
+        background:transparent;
+        }
+
+        .textbox {
+            font-family: "Times New Roman",Times,serif;   
+            height: 90%;
+            width: 92%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background: transparent;
+        }
+
+        .header-Text {
+            font-family: "Times New Roman",Times,serif;   
+            font-weight: 400;
+            font-style: normal;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: .01em;
+            line-height: 1em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 7px;
+            background: transparent;
+        }
+
+        .tagline-Text {
+            display: none;
+        }
+
+        .description-Text {
+            font-family: "Metropolis";   
+            font-weight: 300;
+            font-style: normal;
+            font-size: 16px;
+            letter-spacing: .02em;
+            line-height: 1.5em;
+            color: #fff;
+            text-align: left;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 20px;
+            padding-bottom: 4px;
+            background: transparent;
+        }
+
+
+        .mainButtons-container {
+            height: auto;
+            width: 90%;
+            position: relative;
+            background:transparent;
+            margin-top: 8px;
+            margin-bottom: 14px;
+        }
+
+        .social-Buttons-container {
+            height: 40px;
+            width: 80%;
+            position: relative;
+            background:transparent;
+            margin-top: 10px;
+        }
+
+        .btn {
+        display: inline-flex;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: transparent;
+        font-family: 'lato', sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 14px 14px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3pt;
+        position: relative;
+        margin-right: 4px; 
+        margin-bottom: 10px; 
+        }
+
+        .btn:hover {
+        background-color: #fff;
+        color: black;
+        }
+
+
+        @font-face {
+            font-family: "Metropolis";
+            src: url(fonts/Metropolis.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        .bg-1 { 
+            /* The image used */
+            background-image: url("images/bigstock-People-Moving-forWeb.jpg");
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+
+            z-index: 0.1;
+        }
+
+        .social-icon {
+            padding: 14px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 40px;
+            margin: 4px 2px;
+            color: rgb(255, 255, 255);
+        }
+
+        .social-icon:hover {
+            color: #07889b;;
+        }
+
+        @media handheld {
+                .btn:hover {
+                    display: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    transform: none;
+                }
+
+                .social-icon:hover {
+                    display: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    transform: none;
+                }
+            }
+
+        }
+        
+ 
+     </style>
+ 
+   <!--[if lt IE 9]>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+   <![endif]-->
+ </head>
+ 
+ <body>
+
+         <div class="bg-1">
+                <div id="main-content-container">
+                    <div class="textbox">
+                        <div class="header-Text">DopeScrill Designs</div>
+                        <div class="tagline-Text">Experience Creators / / Story Tellers</div>
+                        <div class="description-Text">
+                            With 10+ years of professional projects under our belts, we focus on bringing your digital ideas to life in innovative ways to provide value to the world.  
+                        </div>
+                        <div class="mainButtons-container">
+                            <a href="UX-UI_work.html" class='btn'>Web & Apps</a>
+                            <a href="photography.html" class='btn'>Photography</a>
+                            <a href="videography.html" class='btn'>Videography</a>
+                            <a href="digitalMarketing.html" class='btn'>Digital Growth</a>
+                            <a href="contactForm_new.html" class='btn'>Contact & Inquiries</a>
+                        </div>
+                        <div class="social-Buttons-container">
+                                <a href="https://www.facebook.com/Dopescrill-474829369697256/" class="social-icon" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                                <a href="https://www.youtube.com/channel/UCMFfgLmhid8S7VodYch-TUQ" class="social-icon" target="_blank"><i class="fa fa-youtube" style="font-size:24px"></i></a>
+                                <a href="https://www.instagram.com/newday_newplace/" class="social-icon" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                                <a href="https://www.linkedin.com/in/daniel-meier-16185352/" class="social-icon" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+         </div>      
+    
+ 
+ </body>
+ </html>

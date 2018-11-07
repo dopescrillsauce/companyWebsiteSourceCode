@@ -1,0 +1,620 @@
+ <!-- UX UI Work HTML -->
+
+ <!doctype html>
+
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+ 
+   <title>The L.A. Story</title>
+   <meta name="description" content="The HTML5 Herald">
+   <meta name="author" content="SitePoint">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+ 
+   <style>
+ 
+       .headerText {
+             font-size: 52px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             color: rgb(255, 255, 255);
+             font-weight: 700;
+             position: relative;
+             text-align: center;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             max-width: 50%;
+             z-index: 9999;
+         }
+ 
+         .headerText-black {
+             font-size: 52px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             color: rgb(46, 46, 46);
+             font-weight: 700;
+             position: relative;
+             text-align: center;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             max-width: 50%;
+         }
+         
+ 
+     .backBtn {
+         position: fixed;
+         left: 40px;
+         top: 40px;
+         z-index: 10;
+     }
+ 
+ 
+         #flex-container {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             width:100%;
+             margin: 0 auto;
+             padding-top: 0px; 
+             padding-bottom: 0px;
+             cursor: pointer;
+         }
+     
+         .flex-item {
+             width: 100%;
+             height: 100%;
+             background: rgb(254, 254, 254);
+             align-items: center;
+             margin: 0 auto;
+             cursor: pointer;
+         }   
+ 
+ 
+         @font-face {
+             font-family: "UsamaLight";
+             src: url(fonts/UsamaLight.otf);
+             font-style: normal;
+             font-weight: 100;
+         }
+ 
+ 
+         header {
+             background: linear-gradient(to top, rgba(255, 253, 253, 0), rgb(255, 255, 255));
+         }
+ 
+         .bg-1 { 
+             /* The image used */
+             background-image: url("images/Fog-Venice-Beach-forWeb.jpg");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-2 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-3 { 
+             /* The image used */
+             background-image: url("images/hollywood_timelapse.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-4 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-5 { 
+             /* The image used */
+             background-image: url("images/robinWilliams_flubber.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-6 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-7 { 
+             /* The image used */
+             background-image: url("images/lucas-youtube.jpg");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-8 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-9 { 
+             /* The image used */
+             background-image: url("images/jessicaParker.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-10 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-11 { 
+             /* The image used */
+             background-image: url("images/production_crop.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-12 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-13 { 
+             /* The image used */
+             background-image: url("images/megatron-crop.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-14 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-15 { 
+             /* The image used */
+             background-image: url("images/unicorn.jpg");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-16 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-17 { 
+             /* The image used */
+             background-image: url("images/damonHappy.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-18 { 
+             /* The image used */
+             background-color: white;
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-19 { 
+             /* The image used */
+             background-image: url("images/ezgif.com-crop.gif");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+         .bg-20 { 
+             /* The image used */
+             background-image: url("");
+ 
+             /* Full height */
+             height: 100%; 
+ 
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;  
+ 
+             z-index: 7777;
+         }
+ 
+      .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+     }
+
+     .lukas-link {
+        font-size: 22px;
+        font-weight: 100px;
+        
+     }
+ 
+ 
+ 
+     @media screen and (max-width: 1390px) {
+ 
+     .backBtn {
+         position: fixed;
+         left: 40px;
+         top: 40px;
+         z-index: 10;
+     }
+ 
+         #flex-container {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             width:100%;
+             height: 100%;
+             margin: 0 auto;
+             padding-top: 0px;
+         }
+ 
+         #flex-container-code {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             width:80%;
+             margin: 0 auto;
+             padding-top: 0px;
+         }
+ 
+         .flex-item {
+             width: 100%;
+             height: 100%;
+             background: rgb(255, 255, 255);
+             align-items: center;
+             margin-bottom: 0px;
+         }
+ 
+     .imgContainer {
+         padding:0px;
+         box-sizing: border-box;
+         border-style: solid;
+         border-width: 0px;
+         padding-right: 0px;
+         border-color: #000000;
+         background:#ffffff;
+         border-radius: 0px;
+         display:block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         cursor: auto;
+     }
+ 
+     img {
+         width: auto;
+         height: 100%;
+         object-fit: cover;
+         background-color: transparent;
+     }
+ 
+ 
+     }
+ 
+         @media screen and (max-width: 720px) {
+ 
+         .backBtn {
+             position: fixed;
+             left: 20px;
+             top: 20px;
+             z-index: 1000;
+         }
+ 
+         .headerText {
+             font-size: 30px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             color: rgb(255, 255, 255);
+             font-weight: 500;
+             position: relative;
+             text-align: center;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             max-width: 85%;
+             z-index: 444;
+             text-shadow: 1px 1px #000000;
+         }
+ 
+         .headerText-black {
+             font-size: 30px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             color: rgb(46, 46, 46);
+             font-weight: 500;
+             position: relative;
+             text-align: center;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             max-width: 85%;
+             
+         }
+ 
+         #flex-container {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             width:100%;
+             height: 100%;
+             margin: 0 auto;
+             padding-top: 0px;
+             padding-bottom: 0px;
+         }
+ 
+         #flex-container-code {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             width:85%;
+             margin: 0 auto;
+             padding-top: 0px;
+             padding-bottom: 30px;
+         }
+ 
+         .flex-item {
+             width: 100%;
+             height: 100%;
+             background: rgb(255, 255, 255);
+             align-items: center;
+             margin-bottom: 0px;
+         }
+ 
+         }
+ 
+     </style>
+ 
+   <!--[if lt IE 9]>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+   <![endif]-->
+ </head>
+ 
+ <body>
+         <header>
+             <div class="backBtn">
+                 <a class="backBtn-fab backBtn-btn-large" href="story.html">BACK</a>
+             </div>   
+         </header>
+ 
+ 
+         <div class="bg-1">
+             <div class="headerText">THE L.A. STORY</div><br>
+         </div>
+ 
+         <div class="bg-2">
+             <div class="headerText-black">A Buckeye journeys to Hollywood...</div><br>
+         </div>
+ 
+         <div class="bg-3">
+             <div class="headerText">...unaware how sweet the suite life could be!</div><br>
+         </div>
+     
+         <div class="bg-4">
+             <div class="headerText-black">While interning the buckeye orders lunch like a pro...</div><br>
+         </div>
+ 
+         <div class="bg-5">
+             <div class="headerText">...for some of the biggest stars in the world.</div>
+         </div>
+ 
+         <div class="bg-6">
+             <div class="headerText-black">Until he lands a gig...</div><br>
+         </div>
+ 
+         <div class="bg-7">
+             <div class="headerText">...working on the very first YouTube celebrity channel.<br>
+                <a class="lukas-link" href="https://www.youtube.com/user/lucas">Lucas Cruikshank's Channel</a>
+            </div><br>
+         </div>
+ 
+         <div class="bg-8">
+             <div class="headerText-black">The buckeye began venturing to studios & production sets.</div><br>
+         </div>
+ 
+         <div class="bg-9">
+             <div class="headerText">Where he bumped shoulders with many more talented & beautiful people.</div><br>
+         </div>
+ 
+         <div class="bg-10">
+             <div class="headerText-black">After learning from the best for many years...</div><br>
+         </div>
+ 
+         <div class="bg-11">
+             <div class="headerText">...the buckeye is now producing content & equipped with invaluable know how.</div><br>
+         </div>
+ 
+         <div class="bg-12">
+             <div class="headerText-black">Lookout Hollywood...</div><br>
+         </div>
+ 
+         <div class="bg-13">
+             <div class="headerText">...the buckeye is on the rise.</div><br>
+         </div>
+ 
+ 
+         <div class="bg-20">
+                 <img src="images/james_1-forWeb.jpg" alt="Avatar" class="avatar">
+         </div>
+        
+    
+ 
+ </body>
+ </html>

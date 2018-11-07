@@ -1,0 +1,767 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Double Good Work</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+  <!--The image used -->
+  <style>
+
+      
+
+        .projectImage { 
+        /* The image used */
+        background-image: url("images/doubleGoodPhone.png");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        }
+
+        .projectImage-2 { 
+        /* The image used */
+        background-image: url("images/doubleGood-fullWidthImage-2.png");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        }
+
+        img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .projectImage-3 { 
+        /* The image used */
+        background-image: url("images/doubleGood_3iphones.png");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        }
+
+        section {
+        width:100%; 
+        max-width:100%; 
+        margin:0px auto; 
+        display:table; 
+        position:relative; 
+        z-index: 1000;
+        background-color: white;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        }
+
+        .pinnedFooter {
+        width:100%; 
+        max-width:90%; 
+        margin:0px auto; 
+        display:table; 
+        position:relative; 
+        z-index: 1000;
+        background-color: rgb(168, 49, 49);
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        }
+
+       .UX-UI_Container { 
+        background-color: rgb(255, 255, 255);
+        height: 100%; 
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        }
+
+
+        .projectName-text {
+        font-size: 44px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 0px;
+        padding-bottom: 40px;
+        padding-left: 0%;
+        padding-right: 18%;
+        position: relative; 
+        z-index: 0;
+        line-height: 54px;
+        color: rgb(72, 72, 72);
+        }
+
+        .h3 {
+        font-size: 15px;
+        font-weight: 100px;
+        text-align: left;
+        font-family: sans-serif;
+        font-style: normal;
+        margin-top: 28px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative; 
+        z-index: 0;
+        color: rgb(94, 94, 94);
+        line-height: 28px;
+        }
+
+        .quote-text {
+        font-size: 34px;
+        font-style: italic;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 0px;
+        padding-bottom: 80px;
+        padding-left: 0%;
+        padding-right: 0%;
+        max-width: 50%;
+        position: relative; 
+        line-height: 44px;
+        color: rgb(36, 36, 36);
+        }
+
+        .quoteName-Text {
+        font-size: 15px;
+        font-weight: 100px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+        font-style: normal;
+        margin-top: 14px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative; 
+        z-index: 0;
+        color: rgb(56, 40, 40);
+        line-height: 26px;
+        }
+
+
+        .h2 {
+            font-size: 24px;
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+            margin-top: 50px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0%;
+            position: relative; 
+            z-index: 0;
+            color: rgb(143, 143, 143);
+            line-height: 30px;
+        }
+
+
+        @font-face {
+            font-family: "UsamaLight";
+            src: url(fonts/UsamaLight.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        header {
+            background: linear-gradient(to top, rgba(255, 253, 253, 0), rgb(255, 255, 255));
+        }
+
+        button {
+        padding:10px;
+        margin:0 10px;
+        width:220px;
+        cursor:pointer;
+        background-color: transparent;
+        color: aqua;
+        border: none;
+        }
+
+      #flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:80%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+
+
+    .flex-item {
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        align-items: center;
+        margin-bottom: 140px;
+    }
+
+    .button-viewWork {
+        background-color: rgb(255, 255, 255);
+        font-style: normal;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding-top: 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 320px;
+        height: 44px;
+        border: 1px solid rgb(31, 31, 31);
+        border-radius: 4px;
+    }
+
+    .button-pinnedToBottomOfPage {
+        display: none;
+    }
+
+    #sticky {
+        display: none;     
+    }
+
+    .footer-text {
+        display: none;
+    }
+
+/* MOBILE CSS ***************/
+
+ @media screen and (max-width: 1024px) {
+
+   
+
+      .quote-text {
+        font-size: 34px;
+        font-style: italic;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 0px;
+        padding-bottom: 80px;
+        padding-left: 0%;
+        padding-right: 0%;
+        max-width: 100%;
+        position: relative; 
+        line-height: 44px;
+        color: rgb(36, 36, 36);
+        }
+
+        .projectInfo-headerText {
+        font-size: 24px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 0px;
+        padding-bottom: 60px;
+        padding-left: 0%;
+        padding-right: 0%;
+        max-width: 100%;
+        position: relative; 
+        z-index: 0;
+        line-height: 54px;
+        color: #484848;
+    }
+
+ .button-pinnedToBottomOfPage {
+        background-color: #769028;
+        border: none;
+        color: white;
+        line-height: 18px;
+        position: relative;
+        line-height: 44px;
+        margin-top: 18px;
+        margin-right: 20px;
+        height: 40px;
+        padding: 3px 14px !important;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color:white;
+        z-index: 1000;
+        border-radius: 4px; 
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #sticky {
+        display: inline-block;
+        width:100%;
+        height: 80px;
+        padding-top: 0px;
+        background:rgb(249, 249, 249);
+        position:fixed;    
+        bottom:0;          
+        left:0;      
+        z-index:999;
+        border-top-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);      
+    }
+
+    .footer-text {
+        font-size: 15px;
+        font-weight: 500px;
+        text-align: left;
+        font-family: sans-serif;
+        margin-top: 32px;
+        padding-left: 20px;
+        float: left; 
+        z-index: 999;
+        color: rgb(38, 38, 38);
+        line-height: 15px;
+        display: table-cell !important;
+        width: 166px;
+        vertical-align: middle;
+        letter-spacing: 0.5px;
+    }
+
+ }
+
+    @media screen and (max-width: 720px) {
+
+        .overlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 1.0);
+        }
+
+        section {
+            width:100%; 
+            height: 64px; 
+            margin:0px auto; 
+            display:table; 
+            position:relative; 
+            z-index: 1000;
+            background-color: white;
+            border-bottom-style: solid;
+            border-width: 1px;
+            border-color: rgb(223, 223, 223);
+        }
+        
+
+        .projectName-text {
+            font-size: 32px;
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0%;
+            padding-right: 0%;
+            position: relative; 
+            z-index: 0;
+            line-height: 38px;
+            color: rgb(72, 72, 72);
+        }
+
+    .projectInfo-headerText {
+        font-size: 24px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 30px;
+        padding-bottom: 0px;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative; 
+        z-index: 0;
+        line-height: 24px;
+        color: rgb(72, 72, 72);
+    }
+
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0%;
+            padding-right: 0%;
+            position: relative; 
+            line-height: 30px;
+            letter-spacing: 0.5px;
+            color: rgb(80, 80, 80);
+        }
+
+        .h2 {
+            font-size: 21px;
+            font-weight: 100px;
+            text-align: left;
+            font-family: sans-serif;
+            font-style: italic;
+            margin-top: 30px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0%;
+            position: relative; 
+            z-index: 0;
+            color: rgb(143, 143, 143);
+            line-height: 30px;
+        }
+
+        .h3 {
+            font-size: 14px;
+            font-weight: 100px;
+            text-align: left;
+            font-family: sans-serif;
+            margin-top: 30px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 4%;
+            position: relative; 
+            z-index: 0;
+            color: rgb(94, 94, 94);
+            line-height: 26px;
+        }
+
+        
+
+    .h4 {
+        font-size: 44px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative; 
+        z-index: 0;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(198, 198, 198);
+        line-height: 54px;
+    }
+
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 0px;
+        height: 0; 
+        overflow: hidden;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 22px;
+        border-color: #ffffff;
+        }
+        
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+    }
+
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:85%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    #flex-container-fullWidthImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+        height: 60%;
+    }
+
+    .flex-item {
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        align-items: center;
+        margin-bottom: 140px;
+    }
+
+    .button-pinnedToBottomOfPage {
+        background-color: #769028;
+        border: none;
+        color: white;
+        line-height: 18px;
+        position: relative;
+        line-height: 44px;
+        margin-top: 18px;
+        margin-right: 20px;
+        height: 40px;
+        padding: 3px 14px !important;
+        text-align: center;
+        float: right;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color:white;
+        z-index: 1000;
+        border-radius: 4px; 
+        vertical-align: middle;
+    }
+
+    #sticky {
+        display: inline-block;
+        width:100%;
+        height: 80px;
+        padding-top: 0px;
+        background:rgb(249, 249, 249);
+        position:fixed;    
+        bottom:0;          
+        left:0;      
+        z-index:999;
+        border-top-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);      
+    }
+
+    .footer-text {
+        font-size: 15px;
+        font-weight: 500px;
+        text-align: left;
+        font-family: sans-serif;
+        margin-top: 32px;
+        padding-left: 20px;
+        float: left; 
+        z-index: 999;
+        color: rgb(38, 38, 38);
+        line-height: 15px;
+        display: table-cell !important;
+        width: 166px;
+        vertical-align: middle;
+        letter-spacing: 0.5px;
+    }
+
+
+    }
+
+
+    </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+        <header>
+            <section>
+                <a id="logoContainer-Desktop" href="index.html"><img src="assets/Homepage_logo-mobileNav.png" width="50"></img></a> 
+                <div id="mobile-nav-toggle-menu" ><img src="images/world_icon_menu.png" width="44" onclick="openNav()"></img></div> 
+            <nav>
+                <ul>  
+                        <div class="dropdown">
+                                <div class="dropbtn">Services 
+                                <i class="fa fa-caret-down"></i>
+                                </div>
+                            <div class="dropdown-content">
+                                <a href="UX-UI_work.html">Web / Apps / Software</a>
+                                <a href="photography.html">Photography</a>
+                                <a href="videography.html">Videography</a>
+                                <a href="digitalMarketing.html">Digital Growth</a>
+                            </div>
+                        </div>
+                    <div class="dropdown">
+                        <a href="story.html"><div class="dropbtn">Story & Approach</div></a>
+                    </div>
+                    
+                    <!-- <div class="dropdown">
+                        <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="dropbtn">Travel</div> </a>
+                    </div> -->
+                    <div class="dropdown">
+                        <a href="contactForm_new.html"><div class="dropbtn">Contact & Inquiries</div> </a>
+                    </div>
+                    <!-- <div class="dropdown">
+                        <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="contactMebtn">Contact & Inquiries</div></a>
+                    </div> -->
+                </ul>
+            </nav>
+           
+      
+    
+             <!-- Mobile Navigation Overlay Toggle -->
+             <div id="myNav" class="overlay">
+                    <!-- <a href="index.html" class="mobile-logo">DSX</a> -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    <div class="servicesText"><a href="UX-UI_work.html">Web / Apps / Software</a></div>
+                    <div class="servicesText"><a href="photography.html">Photography</a></div>
+                    <div class="servicesText"><a href="videography.html">Videography</a></div>
+                    <div class="servicesText"><a href="digitalMarketing.html">Digital Growth</a></div>
+                <br>
+                    <div class="servicesText"><a href="story.html">Story & Approach</a></div>
+                   
+                    <!-- <div class="servicesText"><a href="#">Travel</a></div> -->
+                    <div class="servicesText"><a href="contactForm_new.html">Contact & Inquiries</a></div>
+                    </div>
+            </div>
+            
+        </section> 
+
+        </header>
+
+            <div id="flex-container-fullWidthImage">
+                <div class="flex-item">
+                    <div class="projectImage">
+                    </div> 
+                </div> 
+            </div>
+            
+            <div class="backBtn">
+                <a class="backBtn-fab backBtn-btn-large" id="zoomBtn" href="UX-UI_work.html">Back To Project List</a>
+            </div>
+
+            <div id="flex-container">
+                <div class="UX-UI_Container">
+                    <div class="projectName-text"><strong>Double Good</strong>
+                        <div class="projectUrl-link"><a href="https://campaigns.doublegood.com/store/" target="_blank">campaigns.doublegood.com</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="flex-container">
+                <div class="quote-text">“Design alternative ways for buyers to navigate shoppable products on seller’s store page with the goal of getting to the “right” product most efficiently”.
+                        <div class="quoteName-Text">
+                            - Double Good Product Owner
+                        </div>
+                </div>  
+            </div>
+
+            <div id="flex-container">
+                <div class="projectInfo-headerText"><strong>What's Double Good?</strong>
+                    <div class="h3">
+                        Double Good is a Product based fundraising company (think Girl Scout Cookies), where 50% of all revenue goes towards kids with special needs.<br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="flex-container">
+                    <div class="projectInfo-headerText"><strong>Who Uses Double Good?</strong><br>
+                        <div class="h3">
+                            <strong>The Popcorn Seller</strong> : Buyers purchase popcorn primarily for the purpose of supporting the seller as they know that half of the money they spend on the popcorn will go towards the cheerleader/dancer they’re buying from.  People don’t buy popcorn from Double Good, they buy popcorn from "Jonny’s Pop-Up Store".<br><br>
+                            <strong>Popcorn Shopper / Buyer</strong> : Once a seller creates their store, it allows their friends and family to shop for popcorn where 50% of any sales will go to them for the purpose of offsetting their expenses.<br><br>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="flex-container-fullWidthImage">
+                <div class="flex-item">
+                    <div class="projectImage-3">
+                    </div> 
+                </div> 
+            </div>
+            <br>
+
+            <div id="flex-container"><br>
+                <div class="quote-text">“The price seems high on some of the products...why is that?”
+                    <div class="quoteName-Text">
+                        - Double Good Customer
+                    </div>
+                </div>  
+            </div>
+
+            <div id="flex-container">
+                <div class="projectInfo-headerText"><strong>UX Enhancements</strong><br>
+                    <div class="h3">
+                        <strong>Challenge</strong> : Some of the buyer's are "turned off" by some of the price tags. Design to help shoppers understand why the price is what it is, and make them feel a bit more at ease with the price of the products.<br><br>
+                        <strong><i>Solution</i></strong> : We added support text communicating that 50% of that sale will go towards that seller on the "Call-To-Action" copy.<br><br>
+                        <strong>Challenge</strong> : Roughly <i>60% of all visits</i> to the seller's page also includes visiting the <i>"Leadership Board"</i>. Improve the perceived relationship between the Seller and the Leadership board.<br><br>
+                        <strong><i>Solution</i></strong> : We added a clickable text link in the Seller's bio container to bring the "Leadership Board Ranking" more to the forefront of the user experience, which attempts to further communicate where they stand in their fundrainsing efforts.<br><br>
+                        <strong>Challenge</strong> : “Design alternative ways for buyers to navigate shoppable products on seller’s store page with the goal of getting to the “right” product most efficiently”.<br><br>
+                        <strong><i>Solution</i></strong> : Designed category based containers on the Seller's landing page to expedite the process of finding Popcorn based on the Buyers taste and preferences.<br><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="flex-container-fullWidthImage">
+                <div class="flex-item">
+                    <div class="projectImage-2">
+                    </div> 
+                </div> 
+            </div>
+
+            <div id="flex-container">
+                    <div class="UX-UI_Container">
+                    <div class="projectInfo-headerText"><strong>Work Deliverables</strong><br>
+                        <div class="h3">
+                                <div class="workSample-links"><a href="assets/BuyersNavigatingStore_Diagrams&Notes.png" target="_blank">Notes & Diagrams</a></div>
+                                <div class="workSample-links"><a href="assets/NavigateSellersPage_Opt-2_Artboard.png" target="_blank">Mobile Wireframes</a></div>
+                                <div class="workSample-links"><a href="https://invis.io/JELWB6D5Q7N#/310883707_2-1_Visitors_Intent_modal" target="_blank">Mobile Invision Prototype</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="flex-container">
+                <div class="previous-next_Container">
+                <div class="previousNextProjectsNav"><a href="travelAppProject.html">Previous Project</a></div>
+                <div class="nextProject"><a href="chairliftProject.html">Next Project</a></div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <footer id="sticky">
+                <div class="footer-text">Want to work together?</div>
+                <div class="button-pinnedToBottomOfPage"><a href="contactForm_new.html">CONTACT</a></div>
+            </footer>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        
+
+</body>
+</html>

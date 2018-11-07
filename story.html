@@ -1,0 +1,1078 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DS Story & Approach</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127158361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127158361-1');
+</script>
+
+ 
+  <style>
+
+      @font-face {
+            font-family: "UsamaLight";
+            src: url(fonts/UsamaLight.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+    section {
+        width:100%; 
+        max-width:100%; 
+        margin:0px auto; 
+        display:table; 
+        position:relative; 
+        z-index: 1000;
+        background-color: white;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.14); */
+    } 
+
+     #mainContentContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding-top: 0px; 
+            padding-bottom: 0px;
+            background-color: white;
+            z-index: 0.5;
+            position: fixed;
+        }
+
+    #flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:100%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 0px; 
+            padding-bottom: 0px;
+            background-color: aquamarine;
+            z-index: 1111;
+        }
+
+        .flex-item {
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0);
+            align-items: center;
+            margin: 0 auto;
+            z-index: 555;
+        }   
+
+    .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    }
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: 500px;
+    letter-spacing: 1.5px;
+}
+
+     img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px;
+        }
+
+    .chiStory-overlay {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+.chiStory-overlay-content {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    z-index: 1111;
+}  
+
+.chiStory-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    color: black;
+}
+
+    .chiStory-overlay .chiStory-overlay-textContainer {
+        position: absolute;
+        top: 22px;
+        left: 40px;
+        font-size: 60px;
+        width: 90vw;
+        height: 90vh;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .laStory-overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+.laStory-overlay-content {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    z-index: 1111;
+}  
+
+.laStory-overlay .closebtn {
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    color: black;
+}
+
+    .laStory-overlay .laStory-overlay-textContainer {
+        position: absolute;
+        top: 22px;
+        left: 40px;
+        font-size: 60px;
+        width: 90%;
+        height: 90%;
+        background-color: red;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+        div.ex3 {
+            background-color: rgb(255, 255, 255);
+            width: 88%;
+            height: 90%;
+            overflow: auto;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2222;
+        }
+
+         .whiteBackgroundText {
+            font-size: 54px;
+            font-family: UsamaLight;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        .headerText {
+            font-size: 42px;
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: rgb(31, 31, 31);
+            font-weight: 900;
+            text-align: left;
+            width: 100%;
+            line-height: 42px;
+            margin-top: 70px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+
+        .bg-1 { 
+        /* The image used */
+        background-image: url("images/chi_bw_large-2.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        z-index: 7777;
+        
+        }
+
+        .bg-1-la { 
+        /* The image used */
+        background-image: url("images/Fog-Venice-Beach-Thinkstock-Photos-Credit-laddio1234.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        z-index: 7777;
+        
+        }
+
+        .bg-2 { 
+        /* The image used */
+        background-image: url("");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+        .bg-3 { 
+        /* The image used */
+        background-image: url("images/unicorn.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+        .bg-3-la { 
+        /* The image used */
+        background-image: url("images/james_hollywood_LA.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+
+
+
+
+    @media screen and (max-width: 1024px) {  
+
+    
+
+        #mainContentContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding-top: 0px; 
+            padding-bottom: 0px;
+            background-color: white;
+            z-index: 0.5;
+            position: fixed;
+        }
+
+        #flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width:100%;
+            height: calc(100% - 73px);
+            margin: 0 auto;
+            margin-top: 73px; 
+            padding-bottom: 0px;
+            background-color: aquamarine;
+            z-index: 1111;
+        }
+
+        .flex-item {
+            width: 100%;
+            height: 33.33%;
+            background: rgb(62, 62, 62);
+            align-items: center;
+            margin: 0 auto;
+            z-index: 555;
+        } 
+
+    .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    }
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500px;
+    letter-spacing: 1.5px;
+}
+
+     img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px;
+        }
+
+    .chiStory-overlay {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+.chiStory-overlay-content {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    z-index: 1111;
+}  
+
+.chiStory-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    color: black;
+}
+
+    .chiStory-overlay .chiStory-overlay-textContainer {
+        position: absolute;
+        top: 22px;
+        left: 40px;
+        font-size: 60px;
+        width: 90vw;
+        height: 90vh;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .laStory-overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+.laStory-overlay-content {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    z-index: 1111;
+}  
+
+.laStory-overlay .closebtn {
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    color: black;
+}
+
+    .laStory-overlay .laStory-overlay-textContainer {
+        position: absolute;
+        top: 22px;
+        left: 40px;
+        font-size: 60px;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+        div.ex3 {
+            background-color: rgb(255, 255, 255);
+            width: 88%;
+            height: 90%;
+            overflow: auto;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2222;
+        }
+
+         .whiteBackgroundText {
+            font-size: 54px;
+            font-family: UsamaLight;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        .headerText {
+            font-size: 42px;
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: rgb(31, 31, 31);
+            font-weight: 900;
+            text-align: left;
+            width: 100%;
+            line-height: 42px;
+            margin-top: 70px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+
+    a {
+        color: antiquewhite;
+    }
+
+        .bg-1 { 
+        /* The image used */
+        background-image: url("images/chi_bw_large-2.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        z-index: 7777;
+        
+        }
+
+        .bg-1-la { 
+        /* The image used */
+        background-image: url("images/Fog-Venice-Beach-Thinkstock-Photos-Credit-laddio1234.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        z-index: 7777;
+        
+        }
+
+        .bg-2 { 
+        /* The image used */
+        background-image: url("");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+        .bg-3 { 
+        /* The image used */
+        background-image: url("images/unicorn.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+        .bg-3-la { 
+        /* The image used */
+        background-image: url("images/james_hollywood_LA.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+
+        }
+
+        @media screen and (max-width: 720px) {
+
+            .overlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 1.0);
+        }
+
+       .overlay-content {
+            position: relative;
+            top: 20%;
+            width: 100%;
+            min-height: 100%;
+            text-align: center;
+            display:inline-block;
+            color: #ffffff;
+            transition: 1.0s;
+            margin: auto;
+        }
+
+        a { /*  */
+        text-decoration:none;
+        color: #07889b;
+        font-weight: 100;
+    }
+
+
+       #mainContentContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding-top: 0px; 
+            padding-bottom: 0px;
+            background-color: white;
+            z-index: 0.5;
+            position: fixed;
+        }
+
+        #flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width:100%;
+            height: calc(100% - 64px);
+            margin: 0 auto;
+            margin-top: 64px; 
+            padding-bottom: 0px;
+            background-color: aquamarine;
+            z-index: 1111;
+        }
+
+        .flex-item {
+            width: 100%;
+            height: 33.33%;
+            background: rgb(1, 1, 1);
+            align-items: center;
+            margin: 0 auto;
+            z-index: 555;
+        } 
+
+        .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    }
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 87%;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+     img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px;
+        }
+
+    .chiStory-overlay {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+.chiStory-overlay-content {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    z-index: 1111;
+}  
+
+.chiStory-overlay .closebtn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    color: black;
+}
+
+    .chiStory-overlay .chiStory-overlay-textContainer {
+        position: absolute;
+        top: 22px;
+        left: 40px;
+        font-size: 60px;
+        width: 90vw;
+        height: 90vh;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .laStory-overlay {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+.laStory-overlay-content {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    z-index: 1111;
+}  
+
+.laStory-overlay .closebtn {
+    position: absolute;
+    top: 1.2%;
+    left: 1.2%;
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+    color: black;
+}
+
+    .laStory-overlay .laStory-overlay-textContainer {
+        position: absolute;
+        top: 22px;
+        left: 40px;
+        font-size: 60px;
+        width: 90%;
+        height: 90vh;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .background-content{
+        min-height: 100vh;
+        overflow: auto;
+    }
+
+        div.ex3 {
+            background-color: rgb(255, 255, 255);
+            width: 85%;
+            min-height: 100vh;
+            overflow: auto;
+            margin-top: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2222;
+        }
+
+         .whiteBackgroundText {
+            font-size: 54px;
+            font-family: UsamaLight;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        .headerText {
+            font-size: 42px;
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: rgb(31, 31, 31);
+            font-weight: 900;
+            text-align: left;
+            width: 100%;
+            line-height: 42px;
+            margin-top: 70px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+
+    a {
+        color: antiquewhite;
+    }
+
+        .bg-1 { 
+        /* The image used */
+        background-image: url("images/chi_bw_large-2.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        z-index: 7777;
+        
+        }
+
+        .bg-1-la { 
+        /* The image used */
+        background-image: url("images/Fog-Venice-Beach-forWeb.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+
+        z-index: 7777;
+        
+        }
+
+        .bg-2 { 
+        /* The image used */
+        background-image: url("");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+        .bg-3 { 
+        /* The image used */
+        background-image: url("images/unicorn.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+
+        .bg-3-la { 
+        /* The image used */
+        background-image: url("images/james_hollywood_LA.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
+        }
+        
+    
+
+
+        }
+
+
+    </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+        <header>
+                <section>
+                        <a id="logoContainer-Desktop" href="index.html"><img src="assets/Homepage_logo-mobileNav.png" width="50"></img></a> 
+                        <div id="mobile-nav-toggle-menu" ><img src="images/world_icon_menu.png" width="44" onclick="openNav()"></img></div> 
+                    <nav>
+                        <ul>  
+                                <div class="dropdown">
+                                        <div class="dropbtn">Services 
+                                        <i class="fa fa-caret-down"></i>
+                                        </div>
+                                    <div class="dropdown-content">
+                                        <a href="UX-UI_work.html">Web / Apps / Software</a>
+                                        <a href="photography.html">Photography</a>
+                                        <a href="videography.html">Videography</a>
+                                        <a href="digitalMarketing.html">Digital Growth</a>
+                                    </div>
+                                </div>
+                            <div class="dropdown">
+                                <a href="story.html"><div class="dropbtn">Story & Approach</div></a>
+                            </div>
+                            
+                            <!-- <div class="dropdown">
+                                <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="dropbtn">Travel</div> </a>
+                            </div> -->
+                            <div class="dropdown">
+                                <a href="contactForm_new.html"><div class="dropbtn">Contact & Inquiries</div> </a>
+                            </div>
+                            <!-- <div class="dropdown">
+                                <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="contactMebtn">Contact & Inquiries</div></a>
+                            </div> -->
+                        </ul>
+                    </nav>
+                   
+              
+            
+                     <!-- Mobile Navigation Overlay Toggle -->
+                     <div id="myNav" class="overlay">
+                            <!-- <a href="index.html" class="mobile-logo">DSX</a> -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                            <div class="servicesText"><a href="UX-UI_work.html">Web / Apps / Software</a></div>
+                            <div class="servicesText"><a href="photography.html">Photography</a></div>
+                            <div class="servicesText"><a href="videography.html">Videography</a></div>
+                            <div class="servicesText"><a href="digitalMarketing.html">Digital Growth</a></div>
+                            <br>
+                            <div class="servicesText"><a href="story.html">Story & Approach</a></div>
+                           
+                            <!-- <div class="servicesText"><a href="#">Travel</a></div> -->
+                            <div class="servicesText"><a href="contactForm_new.html">Contact & Inquiries</a></div>
+                            </div>
+                    </div>
+                    
+                </section>       
+        
+            </header>
+
+            <div id="mainContentContainer">
+                <div id="flex-container">
+                    <div class="flex-item">
+                        <div class="container">
+                                <img src="images/chi_bw_large-2.jpg" alt="" style="width:100%;">
+                                <div class="centered"><a href="ChicagoStory.html">THE CHICAGO STORY</a></div>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="container">
+                                <img src="images/Fog-Venice-Beach-forWeb.jpg" alt="" style="width:100%;">
+                                <div class="centered"><a href="LaStory.html">THE L.A. STORY</a></div>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="container">
+                                <img src="images/bigstock-People-Moving-forWeb.jpg" alt="" style="width:100%;">
+                                <div class="centered"><a href="approach.html">OUR APPROACH</a></div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+    <script>
+        function openChiStory() {
+            document.getElementById("chiStory").style.width = "100%";
+        }
+        
+        function closeChiStory() {
+            document.getElementById("chiStory").style.width = "0%";
+        }
+    </script>
+
+    <script>
+        function openLaStory() {
+            document.getElementById("laStory").style.width = "100%";
+        }
+        
+        function closeLaStory() {
+            document.getElementById("laStory").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

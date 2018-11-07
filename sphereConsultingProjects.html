@@ -1,0 +1,726 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sphere Consulting Work</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+  <!--The image used -->
+  <style>
+      
+      
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        
+        .projectImage { 
+        /* The image used */
+        background-image: url("images/sphere-blog-index-bg-alt.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        }
+
+        .projectImage-2 { 
+        /* The image used */
+        background-image: url("images/doubleGood-fullWidthImage-2.png");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        }
+
+        section {
+        width:100%; 
+        max-width:100%; 
+        margin:0px auto; 
+        display:table; 
+        position:relative; 
+        z-index: 1000;
+        background-color: white;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.14); */
+        }
+
+        .pinnedFooter {
+        width:100%; 
+        max-width:90%; 
+        margin:0px auto; 
+        display:table; 
+        position:relative; 
+        z-index: 1000;
+        background-color: rgb(168, 49, 49);
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        }
+
+     .UX-UI_Container { 
+        background-color: rgb(255, 255, 255);
+        height: 100%; 
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        }
+
+   .projectName-text {
+        font-size: 44px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 0px;
+        padding-bottom: 40px;
+        padding-left: 0%;
+        padding-right: 18%;
+        position: relative; 
+        z-index: 0;
+        line-height: 54px;
+        color: rgb(72, 72, 72);
+        }
+
+     .h3 {
+        font-size: 15px;
+        font-weight: 100px;
+        text-align: left;
+        font-family: sans-serif;
+        font-style: normal;
+        margin-top: 28px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative; 
+        z-index: 0;
+        color: rgb(94, 94, 94);
+        line-height: 28px;
+        }
+
+        .quote-text {
+        font-size: 34px;
+        font-style: italic;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative; 
+        line-height: 44px;
+        color: rgb(36, 36, 36);
+        }
+
+        .quoteName-Text {
+        font-size: 15px;
+        font-weight: 100px;
+        text-align: left;
+        font-family: sans-serif;    
+        font-style: normal;
+        margin-top: 6px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative; 
+        z-index: 0;
+        color: rgb(56, 40, 40);
+        line-height: 26px;
+        }
+
+
+        .h2 {
+            font-size: 24px;
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+            margin-top: 50px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0%;
+            position: relative; 
+            z-index: 0;
+            color: rgb(143, 143, 143);
+            line-height: 30px;
+        }
+
+
+        @font-face {
+            font-family: "UsamaLight";
+            src: url(fonts/UsamaLight.otf);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        header {
+            background: linear-gradient(to top, rgba(255, 253, 253, 0), rgb(255, 255, 255));
+        }
+
+        button {
+        padding:10px;
+        margin:0 10px;
+        width:220px;
+        cursor:pointer;
+        background-color: transparent;
+        color: aqua;
+        border: none;
+        }
+
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:80%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    #flex-container-fullWidthImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+        height: 60%;
+    }
+
+    .flex-item {
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        align-items: center;
+        margin-bottom: 140px;
+    }
+
+        .button-viewWork {
+        background-color: rgb(255, 255, 255);
+        font-style: normal;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding-top: 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 320px;
+        height: 44px;
+        border: 1px solid rgb(31, 31, 31);
+        border-radius: 4px;
+    }
+
+
+    .button-pinnedToBottomOfPage {
+        display: none;
+    }
+
+    #sticky {
+        display: none;     
+    }
+
+    .footer-text {
+        display: none;
+    }
+
+    
+
+/* MOBILE CSS ***************/
+
+@media screen and (max-width: 1024px) {
+
+.quote-text {
+  font-size: 34px;
+  font-style: italic;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  margin-top: 0px;
+  padding-bottom: 80px;
+  padding-left: 0%;
+  padding-right: 0%;
+  max-width: 100%;
+  position: relative; 
+  line-height: 44px;
+  color: rgb(36, 36, 36);
+  }
+
+  .projectInfo-headerText {
+  font-size: 24px;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  margin-top: 0px;
+  padding-bottom: 60px;
+  padding-left: 0%;
+  padding-right: 0%;
+  max-width: 100%;
+  position: relative; 
+  z-index: 0;
+  line-height: 54px;
+  color: #484848;
+}
+
+.button-pinnedToBottomOfPage {
+  background-color: #769028;
+  border: none;
+  color: white;
+  line-height: 18px;
+  position: relative;
+  line-height: 44px;
+  margin-top: 18px;
+  margin-right: 20px;
+  height: 40px;
+  padding: 3px 14px !important;
+  text-align: center;
+  float: right;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color:white;
+  z-index: 1000;
+  border-radius: 4px; 
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#sticky {
+  display: inline-block;
+  width:100%;
+  height: 80px;
+  padding-top: 0px;
+  background:rgb(249, 249, 249);
+  position:fixed;    
+  bottom:0;          
+  left:0;      
+  z-index:999;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: rgb(223, 223, 223);      
+}
+
+.footer-text {
+  font-size: 15px;
+  font-weight: 500px;
+  text-align: left;
+  font-family: sans-serif;
+  margin-top: 32px;
+  padding-left: 20px;
+  float: left; 
+  z-index: 999;
+  color: rgb(38, 38, 38);
+  line-height: 15px;
+  display: table-cell !important;
+  width: 166px;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+}
+
+    
+
+}
+
+    @media screen and (max-width: 720px) {
+
+
+        .overlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 1.0);
+        }
+
+        .quoteName-Text {
+            font-size: 13px;
+            font-weight: 100px;
+            text-align: left;
+            font-family: sans-serif;    
+            font-style: normal;
+            margin-top: 6px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            position: relative; 
+            z-index: 0;
+            color: rgb(56, 40, 40);
+            line-height: 26px;
+        }
+
+        .projectName-text {
+            font-size: 32px;
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0%;
+            padding-right: 0%;
+            position: relative; 
+            z-index: 0;
+            line-height: 38px;
+            color: rgb(72, 72, 72);
+        }
+
+    .projectInfo-headerText {
+        font-size: 24px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 30px;
+        padding-bottom: 0px;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative; 
+        z-index: 0;
+        line-height: 24px;
+        color: rgb(72, 72, 72);
+    }
+
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0%;
+            padding-right: 0%;
+            position: relative; 
+            line-height: 30px;
+            letter-spacing: 0.5px;
+            color: rgb(80, 80, 80);
+        }
+
+        .h2 {
+            font-size: 21px;
+            font-weight: 100px;
+            text-align: left;
+            font-family: sans-serif;
+            font-style: italic;
+            margin-top: 30px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0%;
+            position: relative; 
+            z-index: 0;
+            color: rgb(143, 143, 143);
+            line-height: 30px;
+        }
+
+        .h3 {
+            font-size: 14px;
+            font-weight: 100px;
+            text-align: left;
+            font-family: sans-serif;
+            margin-top: 30px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 4%;
+            position: relative; 
+            z-index: 0;
+            color: rgb(94, 94, 94);
+            line-height: 26px;
+        }
+
+
+    .h4 {
+        font-size: 44px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative; 
+        z-index: 0;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgb(198, 198, 198);
+        line-height: 54px;
+    }
+
+    .backToProjects {
+        font-size: 14px;
+        text-align: left;
+        font-family: -appsle-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        margin-top: 20px;
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative; 
+        z-index: 10;
+        line-height: 14px;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 0px;
+        height: 0; 
+        overflow: hidden;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 22px;
+        border-color: #ffffff;
+        }
+        
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+    }
+
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:80%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    #flex-container-fullWidthImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+        height: 60%;
+    }
+
+    .flex-item {
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        align-items: center;
+        margin-bottom: 140px;
+    }
+
+    .button-pinnedToBottomOfPage {
+        background-color: #769028;
+        border: none;
+        color: white;
+        line-height: 18px;
+        position: relative;
+        line-height: 44px;
+        margin-top: 18px;
+        margin-right: 20px;
+        height: 40px;
+        padding: 3px 14px !important;
+        text-align: center;
+        float: right;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color:white;
+        z-index: 1000;
+        border-radius: 4px; 
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #sticky {
+        display: inline-block;
+        width:100%;
+        height: 80px;
+        padding-top: 0px;
+        background:rgb(249, 249, 249);
+        position:fixed;    
+        bottom:0;          
+        left:0;      
+        z-index:999;
+        border-top-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);      
+    }
+
+    .footer-text {
+        font-size: 15px;
+        font-weight: 500px;
+        text-align: left;
+        font-family: sans-serif;
+        margin-top: 32px;
+        padding-left: 20px;
+        float: left; 
+        z-index: 999;
+        color: rgb(38, 38, 38);
+        line-height: 15px;
+        display: table-cell !important;
+        width: 166px;
+        vertical-align: middle;
+        letter-spacing: 0.5px;
+    }
+
+
+    }
+
+
+    </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+        <header>
+                <section>
+                        <a id="logoContainer-Desktop" href="index.html"><img src="assets/Homepage_logo-mobileNav.png" width="50"></img></a> 
+                        <div id="mobile-nav-toggle-menu" ><img src="images/world_icon_menu.png" width="44" onclick="openNav()"></img></div> 
+                    <nav>
+                        <ul>  
+                                <div class="dropdown">
+                                        <div class="dropbtn">Services 
+                                        <i class="fa fa-caret-down"></i>
+                                        </div>
+                                    <div class="dropdown-content">
+                                        <a href="UX-UI_work.html">Web / Apps / Software</a>
+                                        <a href="photography.html">Photography</a>
+                                        <a href="videography.html">Videography</a>
+                                        <a href="digitalMarketing.html">Digital Growth</a>
+                                    </div>
+                                </div>
+                            <div class="dropdown">
+                                <a href="story.html"><div class="dropbtn">Story & Approach</div></a>
+                            </div>
+                            
+                            <!-- <div class="dropdown">
+                                <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="dropbtn">Travel</div> </a>
+                            </div> -->
+                            <div class="dropdown">
+                                <a href="contactForm_new.html"><div class="dropbtn">Contact & Inquiries</div> </a>
+                            </div>
+                            <!-- <div class="dropdown">
+                                <a href="/Users/danielmeier/Desktop/website/aboutMe.html"><div class="contactMebtn">Contact & Inquiries</div></a>
+                            </div> -->
+                        </ul>
+                    </nav>
+                   
+              
+            
+                     <!-- Mobile Navigation Overlay Toggle -->
+                     <div id="myNav" class="overlay">
+                            <!-- <a href="index.html" class="mobile-logo">DSX</a> -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                            <div class="servicesText"><a href="UX-UI_work.html">Web / Apps / Software</a></div>
+                            <div class="servicesText"><a href="photography.html">Photography</a></div>
+                            <div class="servicesText"><a href="videography.html">Videography</a></div>
+                            <div class="servicesText"><a href="digitalMarketing.html">Digital Growth</a></div>
+                        <br>
+                            <div class="servicesText"><a href="story.html">Story & Approach</a></div>
+                           
+                            <!-- <div class="servicesText"><a href="#">Travel</a></div> -->
+                            <div class="servicesText"><a href="contactForm_new.html">Contact & Inquiries</a></div>
+                            </div>
+                    </div>
+                    
+                </section>  
+
+        </header>
+
+
+            <div id="flex-container-fullWidthImage">
+                    <div class="flex-item">
+                        <div class="projectImage">
+                        </div> 
+                    </div> 
+            </div>
+
+            <div class="backBtn">
+                    <a class="backBtn-fab backBtn-btn-large" id="zoomBtn" href="UX-UI_work.html">Back To Project List</a>
+                </div>
+
+            <div id="flex-container">
+                <div class="UX-UI_Container">
+                    <div class="projectName-text"><strong>Sphere Software</strong>
+                        <div class="projectUrl-link"><a href="https://sphereinc.com/" target="_blank">sphereinc.com</a></div>
+                    </div>
+                    <div class="projectInfo-headerText">
+                        <div class="h3">
+                            While working with a software consulting company, I teamed up with developers and business executives on projects to<strong> design holistic digital design & business strategies.</strong> This included market research, UX & UI design, graphic design, as well as project management documentation.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="flex-container">
+                    <div class="projectInfo-headerText"><strong>Clients & Projects:</strong><br>
+                        <div class="h3">
+                            <div class="workSample-links"><a href="https://www.rebel.com.br/" target="_blank">Rebel Bank</a></div>
+                            <div class="workSample-links"><a href="https://www.ottimmobilien.com/" target="_blank">Ott Immobilien (Ott Capital Ventures)</a></div>
+                            <div class="workSample-links"><a href="https://sphereinc.com/" target="_blank">Sphere Software (Internal Website)</a></div>
+                            <div class="workSample-links"><a href="assets/Draft Received 10-5-16.pdf" target="_blank">White Paper #1 (Sphere Software)</a></div>
+                            <div class="workSample-links"><a href="assets/Sphere Software - Service Desk White Paper.pdf" target="_blank">White Paper #2 (Sphere Software)</a></div>
+                            <div class="workSample-links"><a href="assets/SphereSalesSheet_01-18-2016.pdf" target="_blank">White Paper #3 (Sphere Software)</a></div>
+                            <div class="workSample-links"><a href="assets/FacebookBanner-4LightBulbGraphic.jpg" target="_blank">Media Graphic (Sphere Software)</a></div>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="flex-container">
+                <div class="previous-next_Container">
+                <div class="previousNextProjectsNav"><a href="advisestreamProject.html">Previous Project</a></div>
+                <div class="nextProject"><a href="oranjProject.html">Next Project</a></div>
+                </div>
+            </div>
+            
+
+            <br><br><br>
+
+            <footer id="sticky">
+                    <div class="footer-text">Want to work together?</div>
+                    <div class="button-pinnedToBottomOfPage"><a href="contactForm_new.html">CONTACT</a></div>
+                </footer>
+
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+</body>
+</html>
